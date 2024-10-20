@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.logotipo img {
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+}
+
+body {
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
+    background: url('../public/ate.png') center top / cover no-repeat;
+    background-attachment: fixed;
+}
+
+header {
+    /*estilizando o header usando flexbox, separando os componenetes: logotipo, navBar e botao_inscrever*/
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+}
+
+#header ul li {
+    list-style: none;
+}
+
+#header ul li a {
+    text-decoration: none;
+    color: black;
+}
+#header ul li a:hover{
+    color: #FF9900;
+    transition: .5s;
+}
+
+#botao {
+    padding: 10px 20px;
+    border: none;
+    background: #FF9900;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .8s;
+}
+
+#botao:hover {
+background: #FDAF3B;
+}
+
+
+footer {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 228, 196, 0.322);
+}
+
+footer section {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+footer aside {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer img {
+    width: 20px;
+}
